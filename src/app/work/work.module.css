@@ -1,0 +1,332 @@
+.workContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.workHero {
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Category Filter Tabs */
+.categoryTabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 16px;
+}
+
+.tabBtn {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.tabBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.tabBtnActive {
+  background: var(--gradient-accent);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 15px -4px rgba(var(--accent-rgb-1), 0.4);
+}
+
+.tabBtnActive:hover {
+  color: #fff;
+}
+
+/* Projects Grid */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projectCard {
+  cursor: pointer;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImgContainer {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.projectCard:hover .projectImg {
+  transform: scale(1.04);
+}
+
+.projectTagBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(3, 7, 18, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-1);
+}
+
+.projectBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.projectTitle {
+  font-family: var(--font-headings);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.projectDesc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.projectStack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.techTag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
+.techTagMore {
+  background: rgba(var(--accent-rgb-1), 0.08);
+  border: 1px solid rgba(var(--accent-rgb-1), 0.15);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--accent-1);
+  font-weight: 600;
+}
+
+.caseStudyBtn {
+  background: transparent;
+  border: none;
+  color: var(--accent-1);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.25s ease;
+}
+
+.projectCard:hover .caseStudyBtn {
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
+
+/* Modal Case Study Drawer */
+.drawerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(3, 7, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.drawerSheet {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(580px, 100vw);
+  height: 100%;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-glass);
+  z-index: 101;
+  overflow-y: auto;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-1);
+  transform: rotate(90deg);
+}
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerImgWrapper {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+
+.drawerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drawerBody {
+  padding: 32px;
+}
+
+.drawerTitle {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.drawerStack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.drawerTechTag {
+  background: rgba(var(--accent-rgb-1), 0.06);
+  border: 1px solid rgba(var(--accent-rgb-1), 0.15);
+  color: var(--accent-1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.drawerSection {
+  margin-bottom: 28px;
+}
+
+.drawerSection h3 {
+  font-family: var(--font-headings);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  border-left: 3px solid var(--accent-1);
+  padding-left: 10px;
+}
+
+.drawerSection p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.drawerActions {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 24px;
+}
+
+/* Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .drawerBody {
+    padding: 24px;
+  }
+}
