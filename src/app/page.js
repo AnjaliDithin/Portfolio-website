@@ -14,16 +14,20 @@ const roles = [
 ];
 
 const skills = [
-  { name: "React", level: "Advanced" },
-  { name: "Next.js", level: "Advanced" },
+  { name: "React", level: "Intermediate" },
+  { name: "Next.js", level: "Intermediate" },
   { name: "JavaScript (ES6+)", level: "Expert" },
   { name: "HTML5 & CSS3", level: "Expert" },
   { name: "Responsive Layouts", level: "Expert" },
   { name: "CSS Modules & Vanilla", level: "Expert" },
   { name: "REST APIs", level: "Advanced" },
   { name: "Git & Version Control", level: "Advanced" },
-  { name: "Accessibility (WCAG)", level: "Intermediate" },
-  { name: "UI Polish & Motion", level: "Advanced" }
+  { name: "Accessibility (WCAG)", level: "Advanced" },
+  { name: "UI Polish & Motion", level: "Advanced" },
+  { name: "Vercel & Netlify", level: "Advanced" },
+  { name: "AWS CloudFront & CDN", level: "Intermediate" },
+  { name: "Shopify Storefronts (Liquid)", level: "Advanced" },
+  { name: "WordPress Customization & Elementor", level: "Expert" }
 ];
 
 const experiences = [

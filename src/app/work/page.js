@@ -376,6 +376,28 @@ const projects = [
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80",
     liveLink: "https://www.24karat.co.in/",
     codeLink: ""
+  },
+  {
+    id: 17,
+    title: "Pleasant Acrylic Website",
+    category: "CMS Development",
+    description:
+      "A sleek corporate website designed for premium acrylic fabrication services built completely with Elementor.",
+    longDescription:
+      "Developed a highly responsive corporate presence for Pleasant Acrylic using Elementor Pro. Crafted custom visual layouts, interactive landing modules, and rich portfolio showcase elements designed to highlight high-fidelity custom design fabrications while maintaining rapid loading times and clean cross-device structures.",
+    challenges:
+      "Optimizing complex Elementor widgets, visual templates, and heavy media assets to ensure high performance scores and avoid page bloat while maintaining intricate responsive breakpoints.",
+    techStack: [
+      "Elementor",
+      "JavaScript",
+      "CSS3",
+      "HTML5",
+      "Responsive Design"
+    ],
+    image:
+      "https://www.pleasantacrylic.com/wp-content/uploads/2025/12/Gemini_Generated_Image_h9dba1h9dba1h9db.png",
+    liveLink: "https://www.pleasantacrylic.com/",
+    codeLink: ""
   }
 ];
 
