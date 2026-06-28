@@ -60,7 +60,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-    liveLink: "https://acodez.in",
+    liveLink: "https://anjali-frontend.acodez.pages.dev/",
     codeLink: ""
   },
   {
@@ -130,7 +130,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
-    liveLink: "",
+    liveLink: "https://arambliving.com",
     codeLink: ""
   },
   {
@@ -152,7 +152,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80",
-    liveLink: "",
+    liveLink: "https://landing.acodez.ca/ayurveda-yoga-retreat-kerala/",
     codeLink: ""
   },
   {
@@ -174,7 +174,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
-    liveLink: "",
+    liveLink: "https://landing.acodez.ca/The-Kings-club",
     codeLink: ""
   },
   {
@@ -218,7 +218,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80",
-    liveLink: "",
+    liveLink: "https://yrkinfra.acodez.ca/",
     codeLink: ""
   },
   {
@@ -327,8 +327,7 @@ const projects = [
       "JavaScript",
       "Responsive Layouts"
     ],
-    image:
-      "https://aimerbschool.com/wp-content/themes/aimer/images/home/banner.jpg",
+    image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=900&q=80",
     liveLink: "https://aimerbschool.com/",
     codeLink: ""
   },
@@ -375,7 +374,7 @@ const projects = [
     ],
     image:
       "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80",
-    liveLink: "",
+    liveLink: "https://www.24karat.co.in/",
     codeLink: ""
   }
 ];

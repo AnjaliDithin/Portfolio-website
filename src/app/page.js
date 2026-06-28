@@ -252,7 +252,7 @@ export default function Home() {
                 </div>
 
                 <p className={styles.cardDescription} style={{ fontSize: "1.1rem" }}>
-                  I build web experiences with visual clarity and dependable execution. Specializing in modern React ecosystems, glassmorphic UI design, and pixel-perfect layouts.
+                  I build high-performance web experiences focused on visual clarity and dependable execution. Specializing in modern ecosystems like Next.js and Astro.js, custom WordPress development, glassmorphic UI design, and pixel-perfect layouts.
                 </p>
 
                 <div className={styles.heroActions}>
