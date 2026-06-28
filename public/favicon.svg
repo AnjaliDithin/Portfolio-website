@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Anjali monogram">
-  <rect width="64" height="64" rx="16" fill="#0f172a"/>
-  <rect x="10" y="10" width="44" height="44" rx="12" fill="#ffffff" opacity="0.95"/>
-  <path d="M22 22h7.2l6.8 10.2L42.8 22H50l-11.2 10.6L50 43H42.8l-6.7-9.8L29.2 43H22l11.1-10.4L22 22Z" fill="url(#g)"/>
-  <defs>
-    <linearGradient id="g" x1="20" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#6366f1"/>
-    </linearGradient>
-  </defs>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="60" fill="#1b3651"/>
+  
+  <!-- "KP" Monogram -->
+  <path d="M140 130V382M140 256H190L275 130M140 256H200L290 382" stroke="#d4af37" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M372 256C372 215 340 180 300 180H260V332H300C340 332 372 297 372 256Z" stroke="#d4af37" stroke-width="25" stroke-linejoin="round"/>
 </svg>
